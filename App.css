@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import "react-alice-carousel/lib/alice-carousel.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: gold;
+}
+
+.app {
+    background-color: #14161a;
+    color: white;
+    min-height: 100vh;
+}
+
+/* .appbar {
+    flex: 1;
+    color: gold;
+    font-family: "Montserrat";
+    font-weight: bold;
+    cursor: pointer;
+} */
+
+.banner {
+    background-image: url(../public/banner.jpg);
+    
+}
+
+.bannerContent {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+    justify-content: space-around;
+}
+
+.tagline {
+    display: flex;
+    height: 40%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel {
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.carouselItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+}
+
+
+.container {
+    display: flex;
+  }
+  
+  @media only screen and (max-width: 960px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  .sidebar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+    max-height:100vh;
+    margin-top: 25px;
+    border-right: 2px solid grey;
+  }
+
+  @media only screen and (max-width: 960px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  
+  .heading {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: Montserrat;
+  }
+  
+  /* .description {
+    width: 100%;
+    font-family: Montserrat;
+    padding: 25px;
+    padding-bottom: 15px;
+    padding-top: 0;
+    text-align: justify;
+  } */
+  
+  .marketData {
+    align-self: start;
+    padding: 25px;
+    padding-top: 10px;
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 960px) {
+    .marketData {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .marketData {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .marketData {
+      align-items: start;
+    }
+  }
+
+  .coinContainer {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+  }
+  
+  @media (max-width: 960px) {
+    .coinContainer {
+      width: 100%;
+      margin-top: 0;
+      padding: 20px;
+      padding-top: 0;
+    }
+  }
+  
+  
+  .selectbutton {
+    border: 1px solid gold;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Montserrat;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--text-color); 
+    font-weight: 500;
+    width: 22%;
+    transition: background-color 0.3s, color 0.3s;
+  
+    &:hover {
+      background-color: gold;
+      color: rgb(255, 255, 255);
+    }
+  }
+  
