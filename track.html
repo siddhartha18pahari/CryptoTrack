@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptocurrency Tracker</title>
+    <style>
+        /* Basic styling for the entire page */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header and Navigation Bar */
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        /* Styling for the cryptocurrency table */
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: left;
+            padding: 8px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* Footer styling */
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h1>Cryptocurrency Tracker</h1>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Change (24h)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Bitcoin</td>
+                <td>$30,000</td>
+                <td>+5%</td>
+            </tr>
+            <tr>
+                <td>Ethereum</td>
+                <td>$2,000</td>
+                <td>+3%</td>
+            </tr>
+            <tr>
+                <td>Ripple</td>
+                <td>$0.50</td>
+                <td>-2%</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        <p>Cryptocurrency values updated every minute</p>
+    </div>
+</body>
+</html>
